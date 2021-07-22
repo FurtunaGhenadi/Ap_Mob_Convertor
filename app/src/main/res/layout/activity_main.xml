@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/TextInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introdu temperatura"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:textSize="16sp">
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/C_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="În Celcius"
+            android:textSize="16sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/F_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="În Fahrenheit"
+            android:textSize="16sp"></RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textSize="16sp">
+    </Button>
+
+    <TextView
+        android:id="@+id/TextOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"></TextView>
+
+</LinearLayout>
